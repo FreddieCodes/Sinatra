@@ -1,1 +1,9 @@
-Hello from planet earth
+<% @list_of_cities_and_weather.each do |k, v| %>
+    <%= "Hello from #{k} - #{v}<br>" %>
+<% end %>
+
+<form action="/" method="post">
+  City:<br>
+  <input  type="text" name="city"><br>
+  <input type="submit" value="Submit">
+</form>
